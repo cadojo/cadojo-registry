@@ -1,0 +1,24 @@
+title: article
+author: Joey Carpinelli
+version: 1.0.0
+quarto-required: ">=1.5.0"
+contributes:
+  formats:
+    pdf:
+      block-headings: false
+      fontsize: 12pt
+      mainfont: "CMU Serif"
+      documentclass: article
+      classoption: usletter
+      toc: true
+      colorlinks: true
+      urlcolor: "PaleGreen4!50!black"
+      geometry: 
+        - margin=1in
+        - nohead
+        - nomarginpar
+      include-in-header: header.tex
+      include-before-body: 
+        text: \begin{multicols}{2}
+      include-after-body: 
+        text: \end{multicols}
