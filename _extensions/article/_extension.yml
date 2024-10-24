@@ -10,15 +10,9 @@ contributes:
       mainfont: "CMU Serif"
       documentclass: article
       classoption: usletter
-      toc: true
+      toc: false
       colorlinks: true
-      urlcolor: "PaleGreen4!50!black"
+      urlcolor: "PaleGreen4!75!black"
       geometry: 
         - margin=1in
-        - nohead
-        - nomarginpar
       include-in-header: header.tex
-      include-before-body: 
-        text: \begin{multicols}{2}
-      include-after-body: 
-        text: \end{multicols}
